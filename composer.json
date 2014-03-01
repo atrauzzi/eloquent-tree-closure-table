@@ -11,8 +11,10 @@
 	"require": {
 		"illuminate/database": "4.*"
 	},
-	"psr-0": {
-		"Atrauzzi\\EloquentTreeClosureTable": "src/"
+	"autoload": {
+		"psr-0": {
+			"Atrauzzi\\EloquentTreeClosureTable": "src/"
+		}
 	},
 	"minimum-stability": "dev"
 }
