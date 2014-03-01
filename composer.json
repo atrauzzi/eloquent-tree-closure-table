@@ -12,7 +12,7 @@
 		"illuminate/database": "4.*"
 	},
 	"psr-0": {
-		"Atrauzzi\\LaravelClosureTable": "src/"
+		"Atrauzzi\\EloquentTreeClosureTable": "src/"
 	},
 	"minimum-stability": "dev"
 }
