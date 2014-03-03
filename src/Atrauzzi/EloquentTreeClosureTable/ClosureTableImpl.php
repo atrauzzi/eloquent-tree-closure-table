@@ -118,12 +118,10 @@
 				->where($this->getQualifiedKeyName(), '!=', $this->getKey())
 			;
 
-			//dd($relation->getQuery()->getQuery()->wheres);
-
 			// The first one gets the Eloquent query, the second gets the basic query from it.
 			$builder = $relation->getQuery()->getQuery();
 
-			// Clear the one that's enforcing the key of the instance on the pivot.
+			// Clear the where that's enforcing the key of the instance on the pivot.
 			foreach($builder->wheres as $index => $where)
 				if($where['column'] == sprintf('%s.%s', $this->getClosureTable(), $this->descendantColumn))
 					unset($builder->wheres[$index]);
